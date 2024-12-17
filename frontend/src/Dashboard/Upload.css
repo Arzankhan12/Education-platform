@@ -1,0 +1,244 @@
+.upload {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload h2 {
+  text-align: center;
+  color: #34495e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#sequence{
+
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.upload-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.upload-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.upload-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #2980b9;
+}
+
+.upload-status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #27ae60;
+}
+
+.upload-input {
+  display: none; /* Hide the actual input */
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #ff3b30; /* Red background color similar to the image */
+  color: white; /* White text */
+  padding: 20px 20px; /* Add padding for size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 19px; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Pointer cursor to mimic a button */
+  transition: background-color 0.3s ease;
+  width: 100%; /* Add hover effect */
+}
+
+.upload-label:hover {
+  background-color: #e02a20; /* Darker shade of red on hover */
+}
+.upload {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload h2 {
+  text-align: center;
+  color: #34495e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased spacing for better visibility */
+}
+
+.input-label {
+  font-size: 1rem;
+  margin-bottom: 8px; /* Added spacing below label */
+  color: #34495e;
+  font-weight: 500; /* Slightly bolder text for clarity */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Subtle background for inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3498db; /* Highlighted border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle focus shadow */
+  outline: none;
+}
+
+#sequence,
+#chapter {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.upload-textarea {
+  height: 120px; /* Increased height for textarea */
+  resize: none; /* Disable resize */
+}
+
+.upload-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+}
+
+.upload-status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #27ae60;
+}
+
+.upload-input {
+  display: none; /* Hide the actual file input field */
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #ff3b30; /* Red background color for drag-and-drop area */
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.upload-label:hover {
+  background-color: #e02a20; /* Darker red on hover */
+}
+
+/* Ensure spacing between inputs and the drag-and-drop area */
+.upload .input-group:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+.next-btn{
+  
+ 
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.prev-btn{
+ 
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 10px;
+ 
+  
+
+  
+}

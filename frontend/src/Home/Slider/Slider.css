@@ -1,0 +1,115 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Slider */
+  .slider {
+    position: relative;
+  }
+  
+  .slider-images {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Navigation Buttons */
+  .btn1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .btn1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Dots */
+  .dots {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .slider-container {
+      width: 100%;
+    }
+  
+    .slider-image {
+      width: 100%;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 8px;
+    }
+  
+    .dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      font-size: 16px;
+      padding: 6px;
+    }
+  
+    .dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  

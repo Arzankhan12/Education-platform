@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  body {
+    
+ 
+    font-style: normal;
+
+    background-color: white;
+    color: #333;
+  }
+  
+  .login-page {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  /* Left Section - Image */
+  .left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .illustration {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Right Section - Form */
+  .right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-container button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #66cc99;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #339966;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: #5B22C3;
+    text-decoration: none;
+   
+    font-size: 14px;
+  }
+  
+  .other-options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons .btn {
+    margin: 5px;
+    padding: 10px 15px;
+    background: transparent;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+ .social-icons .btn:hover{
+    background-color: rgb(241, 234, 234);
+ }
+  
+  
+  
+  .signup-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-links a {
+    color: #5B22C3;
+    text-decoration: none;
+  }
+
+  .span{
+    font-weight: 700;
+    
+    border-bottom: 1px solid #5B22C3;
+  }
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), 
+      url('../assets/Images/marvin-meyer-SYTO3xs06fU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  /* Card styling */
+  .login-card {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .login-header {
+    margin-bottom: 20px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #339966;
+  }
+  
+  .login-title span {
+    text-transform: lowercase;
+    color: black;
+  }
+  
+  /* Form styles */
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  .login-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* .login-input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+     border: 1px solid black; 
+    /* border-radius: 4px;  
+    outline: none;
+   
+    
+    
+  } */
+  .input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Input field */
+  .login-input {
+    width: 100%;
+    padding: 18px; /* Adjust padding for placeholder space */
+    border: 1px solid black;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Floating label */
+  .login-label {
+    position: absolute;
+    top: 20px; /* Initial position */
+    left: 10px;
+    font-size: 14px;
+    color: black;
+    pointer-events: none; /* Prevent interaction with the label */
+    transition: 0.2s ease all; /* Smooth animation */
+  }
+  
+  /* When the input is focused or contains text */
+  .login-input:focus + .login-label,
+  .login-input:not(:placeholder-shown) + .login-label {
+    top: 5px; /* Move label upwards */
+    font-size: 10px; /* Make the label smaller */
+    color: black; /* Change the label color */
+  }
+ 
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #66cc99;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color:#339966;
+  }
+  
+  /* Footer styles */
+  .login-footer {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .footer-link {
+   
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  .right-section{
+    background-color: white;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .login-card {
+      padding: 15px;
+    }
+  
+    .login-title {
+      font-size: 20px;
+    }
+  
+    .login-input {
+      font-size: 14px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+    }
+  
+    .left-section {
+      display: none;
+    }
+  
+    .right-section {
+      width: 100%;
+    }
+  }
+  
+
+  

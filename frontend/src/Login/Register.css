@@ -1,0 +1,143 @@
+/* General styles */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f8ff;
+  }
+  
+  /* Container for the form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .login-card {
+    background: linear-gradient(145deg, #ffffff, #f0f4fa);
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header */
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #339966;
+    padding-bottom: 10px;
+  }
+  
+  /* Input Fields */
+  .input-container {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .login-input,
+  select {
+    width: 100%;
+    padding: 14px 15px;
+    font-size: 16px;
+    border: 1px solid #dfe4ec;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f8f9fd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-input:focus,
+  select:focus {
+    border-color: #339966;
+    box-shadow: 0 0 6px rgba(51, 153, 102, 0.3);
+  }
+  
+  .login-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 14px;
+    color: #555;
+    background: #f3f8ff;
+    padding: 0 5px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .buttons button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #339966;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #267744;
+    transform: scale(1.03);
+  }
+  
+  .login-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 30px;
+    }
+  
+    .login-title {
+      font-size: 20px;
+    }
+  
+    .login-input,
+    select {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .buttons button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

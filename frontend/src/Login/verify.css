@@ -1,0 +1,126 @@
+/* verify.css */
+
+/* Container styling */
+.verify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f5f7;
+  }
+  
+  /* Card styling */
+  .verify-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .verify-header {
+    margin-bottom: 20px;
+  }
+  
+  .verify-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .verify-title span {
+    color: #007bff;
+  }
+  
+  /* Input styling */
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .verify-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .verify-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  .verify-label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .verify-input:focus + .verify-label,
+  .verify-input:not(:placeholder-shown) + .verify-label {
+    top: -10px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  /* Button styling */
+  .verify-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .verify-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .verify-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Message styling */
+  .verify-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ff4d4d;
+  }
+  
+  .verify-message.success {
+    color: #28a745;
+  }
+  
+  /* Footer styling */
+  .verify-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
